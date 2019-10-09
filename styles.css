@@ -22,11 +22,13 @@ header {
 }
 
 /** body class **/
+
 .body {
   height: auto;
 
 }
 /** nav class **/
+
 .nav {
   display: flex;
   justify-content: flex-end;
@@ -49,6 +51,7 @@ header {
 }
 
 /** top classes **/
+
 .top {
   display: flex;
   flex-direction: column;
@@ -94,6 +97,7 @@ header {
 }
 
 /** sponsors class **/
+
 .sponsors {
   height: 3000px;
 }
@@ -117,19 +121,38 @@ header {
 .sponsorscontent > div,
 .sponsorscontent > article,
 .sponsorscontent > footer {
-  
-  padding-top: 30px;
+  margin-top: 30px;
 }
 .spon {
   height: 10%;
 }
+.spon img {
+  width: 500px;
+}
+.sponmulti img {
+  width: 300px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.sponmulti {
+  display: flex;
+  flex-wrap: wrap;
+}
+.spon h2 {
+  color: #24648c;
+  font-size: 20px;
+  font-weight: 100;
+  border-bottom: 1px solid #24648c;
+}
 
 /** footer **/
+
 .footer {
   background-color: grey;
   height: 13%;
 }
-/** misc **/
+/** about **/
+
 .about p {
   font-size: 17px;
   font-family: Helvetica, Arial, sans-serif;
@@ -143,4 +166,67 @@ header {
 }
 .about p:not(:first-of-type) {
   padding-left: 10px;
+}
+/** connect **/
+
+.connect div img,
+.connect img {
+  width: 40px;
+  color: white;
+}
+.connect div img {
+  margin-left: 30px;
+}
+.connect p {
+  font-size: 33px;
+  font-family: Helvetica, Arial, sans-serif;
+  color: white;
+  font-weight: 100;
+}
+.connect div {
+  margin-left: 315px;
+  margin-right: 85px;
+}
+.connect {
+  display: flex;
+  background-color: #24648c;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  border-radius: 5px;
+}
+
+/** content **/
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+.content p::first-line {
+  font-size: 35px;
+  font-weight: 300;
+  font-family: Helvetica, Arial, sans-serif;
+  color: black;
+}
+
+.content p {
+  color: gray;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+.content input {
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  display: flex;
+  align-self: center;
+  background-color: #768591;
+  height: 45px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.content input:hover {
+  background-color: #35aadc;
+
 }
