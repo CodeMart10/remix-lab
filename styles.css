@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/** general **/
+a {
+  text-decoration: none;
+}
+
+header {
+  background-image: url('https://cposc.org/wp-content/uploads/2018/02/homepage-hero.jpg');
+  background-size: cover;
+}
+
+.sponsors,
+.top,
+.nav {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/** body class **/
+.body {
+  height: auto;
+
+}
+/** nav class **/
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  border: 1px solid black;
+  height: 100px;
+}
+.nav img {
+
+}
+.nav ul{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin-right: 300px;
+}
+.nav ul li {
+  margin-left: 20px;
+  list-style: none;
+}
+
+/** top classes **/
+.top {
+  display: flex;
+  flex-direction: column;
+  height: 750px;
+  color: white;
+  align-items: center;
+  justify-content: space-around;
+}
+.top h1{
+  font-family: "Ubuntu", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 90px;
+}
+.top h2{
+  font-weight: 200;
+  font-size: 25px;
+  margin-top: -70px;
+}
+.topdate {
+  display: flex;
+  align-content: center;
+  font-size: 30px;
+}
+.topdate div {
+  display: flex;
+  align-items: center;
+  background-color: rgba(156, 156, 170, 0.8);
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  position: relative;
+  top: -70px;
+  min-width: 450px;
+}
+.topdate div img{
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+}
+
+/** sponsors class **/
+.sponsors {
+  height: 3000px;
+}
+.sponsorsabout {
+  color: grey;
+}
+
+.sponsorscontent {
+  height: 87%;
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.sponsorscontent div {
+  display: flex;
+}
+.about p:not(:first-of-type) {
+  padding-left: 10px;
+}
+.sponsorscontent > p,
+.sponsorscontent > div,
+.sponsorscontent > article,
+.sponsorscontent > footer {
+  margin-left: 60px;
+  margin-right: 60px;
+  padding-top: 30px;
+  padding-right: 30px;
+}
+.spon {
+  height: 10%;
+}
+
+/** footer **/
+.footer {
+  background-color: grey;
+  height: 13%;
+}
+/** misc **/
+.about {
+
+}
