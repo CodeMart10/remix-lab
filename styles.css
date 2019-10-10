@@ -12,6 +12,7 @@ a {
 header {
   background-image: url('https://cposc.org/wp-content/uploads/2018/02/homepage-hero.jpg');
   background-size: cover;
+  box-shadow: 0px 2px 17px black;
 }
 
 .sponsors,
@@ -124,13 +125,16 @@ header {
   margin-top: 30px;
 }
 .spon {
-  height: 10%;
+  width: 300px;
+  height: 300px;
+  background-color: blue;
+  height: ;
 }
 .spon img {
-  width: 500px;
+  width: 30%;
 }
 .sponmulti img {
-  width: 300px;
+  width: 30px;
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -144,6 +148,17 @@ header {
   font-weight: 100;
   border-bottom: 1px solid #24648c;
 }
+.sponsors-container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 1000px;
+  width: 100%;
+  justify-content: center;
+  justify-content: space-between;
+  padding-left: 500px;
+  padding-right: 500px;
+  background-color: #ccc;
+}
 
 /** footer **/
 
@@ -153,6 +168,10 @@ header {
 }
 /** about **/
 
+.about {
+  box-shadow: 5px 5px 10px black;
+  padding: 10px;
+}
 .about p {
   font-size: 17px;
   font-family: Helvetica, Arial, sans-serif;
@@ -207,7 +226,6 @@ header {
   font-family: Helvetica, Arial, sans-serif;
   color: black;
 }
-
 .content p {
   color: gray;
   font-family: Helvetica, Arial, sans-serif;
@@ -228,5 +246,4 @@ header {
 }
 .content input:hover {
   background-color: #35aadc;
-
 }
