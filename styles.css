@@ -7,15 +7,19 @@
 /** general **/
 a {
   text-decoration: none;
+  color: #363535;
+  border-radius: 20px;
+  padding: 7px;
 }
-
+a:hover {
+  box-shadow: 0px 3px 5px #363535;
+  color: #f7bf08;
+  background-color: #363535;
+}
 header {
-  background-image: url('https://cposc.org/wp-content/uploads/2018/02/homepage-hero.jpg');
-  background-size: cover;
-  box-shadow: 0px 2px 17px black;
+  background-color: #363535;
 }
 
-.sponsors,
 .top,
 .nav {
   max-width: 1000px;
@@ -25,17 +29,15 @@ header {
 /** body class **/
 
 .body {
-  height: auto;
-
+  background-color: #f7bf08;
 }
 /** nav class **/
 
 .nav {
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  border: 1px solid black;
-  height: 100px;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
 }
 .nav img {
 
@@ -44,7 +46,6 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  margin-right: 300px;
 }
 .nav ul li {
   margin-left: 20px;
@@ -57,58 +58,82 @@ header {
   display: flex;
   flex-direction: column;
   height: 750px;
-  color: white;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+
 }
 .top h1{
   font-family: Helvetica, Arial, sans-serif;
   font-weight: 300;
-  font-size: 90px;
+  font-size: 100px;
+  color: #f7bf08;
+
 }
 .top h2{
   font-weight: 200;
   font-size: 25px;
-  margin-top: -70px;
+  color: #eeeeee;
+  margin-bottom: 50px;
+}
+.topline {
+ margin-bottom: 60px;
+ border: 2px solid #f7bf08;
+ border-radius: 30px;
+ width: 1500px;
 }
 .topdate {
   display: flex;
+  justify-content: space-between;
   align-content: center;
   font-size: 30px;
 }
-.topdate div {
+.topdate section {
   display: flex;
   align-items: center;
-  background-color: rgba(156, 156, 170, 0.8);
+  background-color: #f7bf08;
   padding-left: 50px;
   padding-right: 50px;
   padding-top: 20px;
   padding-bottom: 20px;
+  margin-bottom: 10px;
+  min-height: 148px;
   margin-left: 10px;
   margin-right: 10px;
-  border-radius: 5px;
-  position: relative;
+  border-radius: 100px;
   top: -70px;
   min-width: 450px;
 }
-.topdate div img{
+.topdate section img{
   width: 20px;
   height: 20px;
   margin-right: 20px;
 }
+.topdate section p {
+  color: black;
+}
+.topdate section p::first-line {
+  color: #eeeeee;
+}
 
 /** sponsors class **/
+  /*spon = sponsor*/
 
 .sponsors {
   height: 3000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .sponsorsabout {
   font-family: Helvetica, Arial, sans-serif;
-  color: grey;
+  color: black;
   font-size: 21px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .sponsorscontent {
+  max-width:;
   height: 87%;
   display: flex;
   flex-direction: column;
@@ -117,6 +142,7 @@ header {
 }
 .sponsorscontent div {
   display: flex;
+  margin: 0 auto;
 }
 .sponsorscontent > p,
 .sponsorscontent > div,
@@ -126,9 +152,10 @@ header {
 }
 .spon {
   width: 300px;
-  height: 300px;
-  background-color: blue;
-  height: ;
+  height: 150px;
+  background-color: #f7bf08;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 .spon img {
   width: 30%;
@@ -150,16 +177,20 @@ header {
 }
 .sponsors-container {
   display: flex;
-  flex-wrap: wrap;
+  align-content: center;
+  flex-direction: column;
   height: 1000px;
   width: 100%;
   justify-content: center;
-  justify-content: space-between;
-  padding-left: 500px;
-  padding-right: 500px;
-  background-color: #ccc;
+  background-color: #363535;
+  margin-top: 20px;
 }
+.sponsor-container1{
 
+}
+.sponsor-container2{
+  display: flex;
+}
 /** footer **/
 
 .footer {
@@ -170,13 +201,18 @@ header {
 
 .about {
   box-shadow: 5px 5px 10px black;
-  padding: 10px;
+  padding: 30px;
+  max-width: 1500px;
+  background-color: #363535;
+  border-radius: 30px;
+  color: #f7bf08;
 }
 .about p {
-  font-size: 17px;
+  font-size: 18px;
   font-family: Helvetica, Arial, sans-serif;
   line-height: 1.2;
   letter-spacing: 1px;
+  padding-right: 20px;
 }
 .about p::first-line {
   font-weight: 550;
@@ -184,7 +220,8 @@ header {
   line-height: 2.0;
 }
 .about p:not(:first-of-type) {
-  padding-left: 10px;
+  padding-left: 20px;
+  border-left: 2px solid #f7bf08;
 }
 /** connect **/
 
@@ -199,26 +236,26 @@ header {
 .connect p {
   font-size: 33px;
   font-family: Helvetica, Arial, sans-serif;
-  color: white;
-  font-weight: 100;
+  color: black;
+  font-weight: 400;
+  padding-left: 10px;
 }
 .connect div {
-  margin-left: 315px;
+  margin-left: 30px;
   margin-right: 85px;
 }
 .connect {
   display: flex;
-  background-color: #24648c;
+  background-color: #f7bf08;
   justify-content: center;
   align-items: center;
   height: 120px;
-  border-radius: 5px;
 }
 
 /** content **/
 .content {
   display: flex;
-  justify-content: space-between;
+  max-width: 100%;
 }
 .content p::first-line {
   font-size: 35px;
@@ -230,8 +267,8 @@ header {
   color: gray;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 22px;
-  margin-top: 10px;
   line-height: 1.5;
+
 }
 .content input {
   color: white;
